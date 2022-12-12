@@ -1,0 +1,15 @@
+{
+    "name": "censure",
+    "version": "1.2.0",
+    "description": "Dirty russian/english words filter",
+    "main": "censure.js",
+    "scripts" : {
+        "test": "jest"
+    },
+    "repository": "https://github.com/jzavorohina/censure",
+    "author": "Julia Zavorohina",
+    "license": "MIT",
+    "devDependencies": {
+        "jest": "^29.3.1"
+    }
+}
