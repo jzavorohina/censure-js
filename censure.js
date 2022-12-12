@@ -13,7 +13,7 @@
  * - Find profanity (in Russian texts) and replace it with normative vocabulary.
  *
  * Some examples:
- * is_bad('Original text with abusive words'); // return: bool
+ * isBad('Original text with abusive words'); // return: bool
  * replace('Original text with abusive words'); // return: string (text without abusive words)
  * fix('Original phrase with abusive words'); // return: string (fixed text)
  *
