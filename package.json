@@ -4,30 +4,30 @@
   "keywords": [
     "censure",
     "filter",
-    "profanity-words",
-    "profane-words",
-    "vulgar-words",
-    "obscene-words",
-    "profane-words-in-texts",
-    "vulgar-words-in-texts",
-    "obscene-words-in-texts",
-    "censure-filter",
-    "curse-words-filter",
-    "dirty-words-filter",
-    "obscene-language-filter",
-    "indecent-language-filter",
-    "dirty-russian-words-filter",
-    "dirty-english-words-filter",
-    "bad-russian-words-filter",
-    "bad-english-words-filter",
-    "russian-swear-words-filter",
-    "english-swear-words-filter",
-    "swearwords-filter",
-    "words-replacer",
-    "word-replacer",
-    "word-replacement",
+    "profanity words",
+    "profane words",
+    "vulgar words",
+    "obscene words",
+    "profane words in texts",
+    "vulgar words in texts",
+    "obscene words in texts",
+    "censure filter",
+    "curse words filter",
+    "dirty words filter",
+    "obscene language filter",
+    "indecent language filter",
+    "dirty russian words filter",
+    "dirty english words filter",
+    "bad russian words filter",
+    "bad english words filter",
+    "russian swear words filter",
+    "english swear words filter",
+    "swearwords filter",
+    "words replacer",
+    "word replacer",
+    "word replacement",
     "replacer"
-],
+  ],
   "description": "Dirty russian/english words filter",
   "main": "censure.js",
   "scripts": {
@@ -39,8 +39,6 @@
   },
   "author": "Julia Zavorohina",
   "license": "MIT",
-  "dependencies": {
-  },
   "bugs": {
     "url": "https://github.com/jzavorohina/censure-js/issues"
   },
@@ -48,6 +46,7 @@
   "directories": {
     "test": "tests"
   },
+  "dependencies": {},
   "devDependencies": {
     "jest": "^29.3.1"
   }
