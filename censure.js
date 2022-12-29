@@ -205,3 +205,5 @@ class Censure {
 module.exports = {
     Censure
 };
+
+console.log(Censure.fix("Похуй на все"));

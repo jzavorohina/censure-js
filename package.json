@@ -1,5 +1,5 @@
 {
-  "name": "censure",
+  "name": "censure-js",
   "version": "1.2.1",
   "description": "Dirty russian/english words filter",
   "main": "censure.js",
