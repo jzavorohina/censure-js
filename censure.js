@@ -1,8 +1,7 @@
-//////////////
-// CENSURE //
-////////////
 /**
- * CENSURE
+ * //////////////
+ * // CENSURE //
+ * ////////////
  * 
  * Dirty words - filter.  
  * 
@@ -18,7 +17,6 @@
  * fix('Original phrase with abusive words'); // return: string (fixed text)
  *
  * @author jzavorohina@yandex.ru
- * @version 1.2.0
  * 
  */
 
@@ -109,7 +107,7 @@ class Censure {
         'хуета': 'халтура'
     };
 
-    constructor() {}
+    constructor() { }
 
     /**
      * Searches if there any abusive words in the text
@@ -205,5 +203,3 @@ class Censure {
 module.exports = {
     Censure
 };
-
-console.log(Censure.fix("Похуй на все"));
