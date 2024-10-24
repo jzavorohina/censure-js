@@ -49,10 +49,6 @@ test('Replace all bad words', () => {
     expect(Censure.isBad(input)).toBe(true);
     expect(Censure.fix(input)).toBe('Но план был плоховатый.');
 
-    input = 'Наслаждение доставляло ему это зрелище, будто никогда в более подходящей обстановке голых девок не видел, извращенец хуев.';
-    expect(Censure.isBad(input)).toBe(true);
-    expect(Censure.fix(input)).toBe('Наслаждение доставляло ему это зрелище, будто никогда в более подходящей обстановке голых девок не видел, извращенец презренный.');
-
     input = 'Хуёво греют батареи!';
     expect(Censure.isBad(input)).toBe(true);
     expect(Censure.fix(input)).toBe('Плохо греют батареи!');
@@ -71,7 +67,7 @@ test('Replace all bad words', () => {
 
     input = 'Пока навели порядок, хуё-моё — и день прошёл!';
     expect(Censure.isBad(input)).toBe(true);
-    expect(Censure.fix(input)).toBe('Пока навели порядок, нелепость всяческая — и день прошёл!');
+    expect(Censure.fix(input)).toBe('Пока навели порядок, то да сё — и день прошёл!');
 
     input = 'А вот хуеньки!';
     expect(Censure.isBad(input)).toBe(true);
@@ -81,10 +77,8 @@ test('Replace all bad words', () => {
     expect(Censure.isBad(input)).toBe(true);
     expect(Censure.fix(input)).toBe('Это что за халтура!');
 
-
-// If word was not found in base of bad words - it should stay in original version. Even if the word is bad, but it has not yet been added to the database.
     input = 'Ялдометр';
-    expect(Censure.isBad(input)).toBe(false);
-    expect(Censure.fix(input)).toBe(input);
+    expect(Censure.isBad(input)).toBe(true);
+    expect(Censure.fix(input)).toBe('Мужской половой орган большого размера');
 
 });

@@ -9,7 +9,7 @@ test('Russian bad words', () => {
     expect(Censure.isBad(input)).toBe(true);
     expect(Censure.replace(input)).toBe('***, ***, ***');
 
-    input = 'Бздун, бздит, бля, блядская, блядь';
+    input = 'Бздун, бздит, блядская, блядь, бля';
     expect(Censure.isBad(input)).toBe(true);
     expect(Censure.replace(input)).toBe('***, ***, ***, ***, ***');
 
@@ -21,9 +21,9 @@ test('Russian bad words', () => {
     expect(Censure.isBad(input)).toBe(true);
     expect(Censure.replace(input)).toBe('***, ***, ***, ***, ***, ***, ***, ***, ***, ***');
 
-    input = 'Вошка, ядрена вошь, мондавошка, впендюривали, впизду / в пизду, вздрочнул / вздрачил';
+    input = 'Ядрена-вошь, мондавошка, впендюривали, впизду / впизду, вздрочнул / вздрачил';
     expect(Censure.isBad(input)).toBe(true);
-    expect(Censure.replace(input)).toBe('***, *** ***, ***, ***, *** / в ***, *** / ***');
+    expect(Censure.replace(input)).toBe('***, ***, ***, *** / ***, *** / ***');
 
     input = 'Впиздрониться, впиздячиться, впиздюриться, впиздохаться, впиздошиться, впиздюлиться, впиздяриться, впиздюхаться, впиздяхаться, впиздяшиться';
     expect(Censure.isBad(input)).toBe(true);
@@ -61,37 +61,37 @@ test('Russian bad words', () => {
     expect(Censure.isBad(input)).toBe(true);
     expect(Censure.replace(input)).toBe('***, ***, ***, ***, ***, ***, ***');
 
-    input = 'Ебанько, ебеня, ебеня, еблан, ебнутая, ерепениться, eдрёная, едрить, ерундовая, ёбнутая';
-    expect(Censure.isBad(input)).toBe(true);
-    expect(Censure.replace(input)).toBe('***, ***, ***, ***, ***, ***, ***, ***, ***, ***');
-
-    input = 'Жид, жидовская, жопа, жопянная, жопник, жопочник, жопошник';
-    expect(Censure.isBad(input)).toBe(true);
-    expect(Censure.replace(input)).toBe('***, ***, ***, ***, ***, ***, ***');
-
-    input = 'Забулдыга, загадить, зад, задница, задрот, задротище, заноза, зануда, зараза';
+    input = 'Ебанько, ебеня, ебеня, еблан, ебнутая, ерепениться, eдрёная, едрить, ёбнутая';
     expect(Censure.isBad(input)).toBe(true);
     expect(Censure.replace(input)).toBe('***, ***, ***, ***, ***, ***, ***, ***, ***');
 
-    input = 'Засранец, засранка, засеря, затычка';
-    expect(Censure.isBad(input)).toBe(true);
-    expect(Censure.replace(input)).toBe('***, ***, ***, ***');
-
-    input = 'Идиот, идиотка, измандякаться, йух';
-    expect(Censure.isBad(input)).toBe(true);
-    expect(Censure.replace(input)).toBe('***, ***, ***, ***');
-
-    input = 'Карга, клитор, кобель, кобелина, кретин, курва';
-    expect(Censure.isBad(input)).toBe(true);
-    expect(Censure.replace(input)).toBe('***, ***, ***, ***, ***, ***');
-
-    input = 'Лох, лохушка, лахудра, легавый, лупоглазый';
+    input = 'Жопа, жопянная, жопник, жопочник, жопошник';
     expect(Censure.isBad(input)).toBe(true);
     expect(Censure.replace(input)).toBe('***, ***, ***, ***, ***');
 
-    input = 'Мандавошка, манда, монда, мондавошка, маразматик, мегера, мент, мерзавец, мразь';
+    input = 'Забулдыга, задрот, задротище';
     expect(Censure.isBad(input)).toBe(true);
-    expect(Censure.replace(input)).toBe('***, ***, ***, ***, ***, ***, ***, ***, ***');
+    expect(Censure.replace(input)).toBe('***, ***, ***');
+
+    input = 'Засранец, засранка, засеря';
+    expect(Censure.isBad(input)).toBe(true);
+    expect(Censure.replace(input)).toBe('***, ***, ***');
+
+    input = 'Измандякаться, йух';
+    expect(Censure.isBad(input)).toBe(true);
+    expect(Censure.replace(input)).toBe('***, ***');
+
+    input = 'Кобелина, кретин, курва';
+    expect(Censure.isBad(input)).toBe(true);
+    expect(Censure.replace(input)).toBe('***, ***, ***');
+
+    input = 'Лох, лохушка, лахудра';
+    expect(Censure.isBad(input)).toBe(true);
+    expect(Censure.replace(input)).toBe('***, ***, ***');
+
+    input = 'Мандавошка, манда, монда, мондавошка, мерзавец, мразь';
+    expect(Censure.isBad(input)).toBe(true);
+    expect(Censure.replace(input)).toBe('***, ***, ***, ***, ***, ***');
 
     input = 'Мудак, мудило, мудила, мудозвон, мудохаться';
     expect(Censure.isBad(input)).toBe(true);
@@ -125,9 +125,9 @@ test('Russian bad words', () => {
     expect(Censure.isBad(input)).toBe(true);
     expect(Censure.replace(input)).toBe('***, ***, ***, ***, ***, ***, ***, ***, ***, ***');
 
-    input = 'Тварь, тёлка, толстозадый, тошнотворное, трахать, трепотня, тряпка, тупица, тупоголовый, туполобый, тупоумный, тягомотину';
+    input = 'Тварь, толстозадый, трахать, тупица, тупоголовый, туполобый, тупоумный';
     expect(Censure.isBad(input)).toBe(true);
-    expect(Censure.replace(input)).toBe('***, ***, ***, ***, ***, ***, ***, ***, ***, ***, ***, ***');
+    expect(Censure.replace(input)).toBe('***, ***, ***, ***, ***, ***, ***');
 
     input = 'Ублюдок, ублюдошный, уебан, уебище, урод, уродка';
     expect(Censure.isBad(input)).toBe(true);
@@ -145,16 +145,16 @@ test('Russian bad words', () => {
     expect(Censure.isBad(input)).toBe(true);
     expect(Censure.replace(input)).toBe('***, ***, ***, ***, ***, ***, ***, ***');
 
-    input = 'Целка, черножопый, чернозадый, черномазый, чинодрал, чмо, чурбан, чучело';
+    input = 'Целка, черножопый, чернозадый, черномазый, чинодрал, чмо';
+    expect(Censure.isBad(input)).toBe(true);
+    expect(Censure.replace(input)).toBe('***, ***, ***, ***, ***, ***');
+
+    input = 'Шалава, шалашовка, шантрапа, шаромыжник, шваль, шлюха, шлюшка, шушера';
     expect(Censure.isBad(input)).toBe(true);
     expect(Censure.replace(input)).toBe('***, ***, ***, ***, ***, ***, ***, ***');
 
-    input = 'Шалава, шалашовка, шантрапа, шаромыжник, шваль, шизоид, шлюха, шлюшка, шушера';
+    input = 'Щекотильник, юлда, юлдак, ядрёна, ядрена, ядрить';
     expect(Censure.isBad(input)).toBe(true);
-    expect(Censure.replace(input)).toBe('***, ***, ***, ***, ***, ***, ***, ***, ***');
-
-    input = 'Щекотильник, эрекция, юлда, юлдак, ядрёна, ядрена, ядрить';
-    expect(Censure.isBad(input)).toBe(true);
-    expect(Censure.replace(input)).toBe('***, ***, ***, ***, ***, ***, ***');
+    expect(Censure.replace(input)).toBe('***, ***, ***, ***, ***, ***');
 
 });

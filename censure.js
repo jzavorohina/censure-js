@@ -20,7 +20,7 @@ const { patternsRu, patternsEn, replacePatternsRu } = require('./patterns');
  *
  * @author jzavorohina@yandex.ru
  * 
- * List of replacements - by the book "Русский мат.Толковый словарь." Составитель Ахметова Т.В., Москва "КОЛОКОЛ-ПРЕСС", 2000
+ * List of replacements partly - by the book "Русский мат.Толковый словарь." Составитель Ахметова Т.В., Москва "КОЛОКОЛ-ПРЕСС", 2000
  * 
  */
 
