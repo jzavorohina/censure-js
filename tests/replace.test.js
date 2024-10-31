@@ -3,7 +3,7 @@ var { Censure } = require('../censure');
 test('Replace all bad words', () => {
     var input = 'Это пиздёж!';
     expect(Censure.isBad(input)).toBe(true);
-    expect(Censure.fix(input)).toBe('Это неправда!');
+    expect(Censure.fix(input)).toBe('Это ложь!');
 
     input = 'Я те говорил, она на всю башку пизданутая!';
     expect(Censure.isBad(input)).toBe(true);
